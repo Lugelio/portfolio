@@ -414,3 +414,71 @@ footer {
     color: var(--text-sub);
     letter-spacing: 1px;
 }
+.details-modal {
+    align-items: flex-start; /* Alineación técnica a la izquierda */
+    text-align: left;
+    max-width: 650px;
+}
+
+.modal-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.modal-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Etiquetas de sección tipo "debugger" */
+.section-tag {
+    font-size: 0.65rem;
+    color: var(--accent);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.modal-section p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-sub);
+    line-height: 1.5;
+}
+
+.modal-section strong {
+    color: var(--text-main);
+}
+
+/* Tags de tecnologías dentro del modal */
+.details-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.details-tags .tag {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.03);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Responsividad para el modal de texto */
+@media (max-width: 600px) {
+    .details-modal {
+        padding: 20px;
+        width: 95%;
+    }
+    
+    .modal-content-wrapper h3 {
+        font-size: 0.7rem;
+    }
+}
