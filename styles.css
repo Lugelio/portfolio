@@ -482,3 +482,30 @@ footer {
         font-size: 0.7rem;
     }
 }
+.language-selector {
+    display: flex;
+    gap: 10px;
+    margin: 0 20px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-sub);
+    padding: 5px 12px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.lang-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.2);
+}
+
+.lang-btn:hover {
+    border-color: var(--accent);
+}

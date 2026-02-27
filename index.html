@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Luis Hernández — Portafolio</title>
 </head>
-
 <body>
 
     <div class="container">
         <header>
             <div class="logo">Luis Hernández</div>
-            <nav class="nav-rank">TÉCNICO SUPERIOR</nav>
+            <div class="language-selector">
+                <button id="btn-es" class="lang-btn active">ES</button>
+                <button id="btn-en" class="lang-btn">EN</button>
+            </div>
+            <nav class="nav-rank lang-text" data-lang="es">TÉCNICO SUPERIOR</nav>
+            <nav class="nav-rank lang-text" data-lang="en" style="display:none;">SOFTWARE TECHNICIAN</nav>
         </header>
 
         <section class="hero">
             <div class="line"></div>
-            <h1>DESARROLLADOR</h1>
-            <p>Soy Luis Hernández, Técnico Superior en Programación. Me especializo en el diseño de lógica eficiente y
-                la arquitectura de datos relacionales.</p>
+            <h1 class="lang-text" data-lang="es">DESARROLLADOR</h1>
+            <h1 class="lang-text" data-lang="en" style="display:none;">DEVELOPER</h1>
+            
+            <p class="lang-text" data-lang="es">Soy Luis Hernández, Técnico Superior en Programación. Me especializo en el diseño de lógica eficiente y la arquitectura de datos relacionales.</p>
+            <p class="lang-text" data-lang="en" style="display:none;">I am Luis Hernández, a Software Development Technician. I specialize in efficient logic design and relational data architecture.</p>
         </section>
 
         <section id="about">
-            <h2>Trayectoria</h2>
+            <h2 class="lang-text" data-lang="es">Trayectoria</h2>
+            <h2 class="lang-text" data-lang="en" style="display:none;">Experience</h2>
             <div class="grid-about">
                 <div class="about-item">
-                    <h3>00. Origen</h3>
-                    <p>Inicié mi camino en la programación de forma autodidacta, impulsado por la curiosidad. Tras
-                        dominar las bases, decidí formalizar mis conocimientos.</p>
+                    <h3 class="lang-text" data-lang="es">00. Origen</h3>
+                    <h3 class="lang-text" data-lang="en" style="display:none;">00. Origin</h3>
+                    <p class="lang-text" data-lang="es">Inicié mi camino en la programación de forma autodidacta, impulsado por la curiosidad. Tras dominar las bases, decidí formalizar mis conocimientos.</p>
+                    <p class="lang-text" data-lang="en" style="display:none;">I started my programming journey self-taught, driven by curiosity. After mastering the basics, I decided to formalize my knowledge.</p>
                 </div>
                 <div class="about-item">
-                    <h3>01. Formación</h3>
-                    <p>Egresado de la Tecnicatura Superior en Programación. Especialización en Python, JS y gestión de
-                        datos en SQL.</p>
+                    <h3 class="lang-text" data-lang="es">01. Formación</h3>
+                    <h3 class="lang-text" data-lang="en" style="display:none;">01. Education</h3>
+                    <p class="lang-text" data-lang="es">Egresado de la Tecnicatura Superior en Programación. Especialización en Python, JS y gestión de datos en SQL.</p>
+                    <p class="lang-text" data-lang="en" style="display:none;">Graduate Software Technician. Specialized in Python, JS, and SQL data management.</p>
                 </div>
                 <div class="about-item" style="grid-column: span 2;">
-                    <h3>02. Objetivo Actual</h3>
-                    <p>Marzo 2026: Inicio de la Licenciatura en ciencia de datos. Mi meta es la ingeniería de software y
-                        la arquitectura de sistemas complejos.</p>
+                    <h3 class="lang-text" data-lang="es">02. Objetivo Actual</h3>
+                    <h3 class="lang-text" data-lang="en" style="display:none;">02. Current Goal</h3>
+                    <p class="lang-text" data-lang="es">Marzo 2026: Inicio de la Licenciatura en Ciencia de Datos (UBA). Mi meta es la ingeniería de software y sistemas complejos.</p>
+                    <p class="lang-text" data-lang="en" style="display:none;">March 2026: Starting a B.S. in Data Science (UBA). My goal is software engineering and complex system architecture.</p>
                 </div>
             </div>
         </section>
 
         <section id="tech-stack">
-            <h2>TECNOLOGÍAS</h2>
+            <h2 class="lang-text" data-lang="es">TECNOLOGÍAS</h2>
+            <h2 class="lang-text" data-lang="en" style="display:none;">TECH STACK</h2>
             <div class="skills-grid">
                 <div class="skill-item">HTML</div>
                 <div class="skill-item">CSS</div>
@@ -58,164 +68,139 @@
         </section>
 
         <section id="workflow">
-            <h2>ENTORNO Y METODOLOGÍAS</h2>
+            <h2 class="lang-text" data-lang="es">ENTORNO Y METODOLOGÍAS</h2>
+            <h2 class="lang-text" data-lang="en" style="display:none;">WORKFLOW & METHODOLOGIES</h2>
             <div class="skills-grid">
-                <div class="skill-item">MODELADO DE DATOS</div>
-                <div class="skill-item">ESTRUCTURAS SQL</div>
+                <div class="skill-item">DATA MODELING</div>
+                <div class="skill-item">SQL STRUCTURES</div>
                 <div class="skill-item">POSTGRESQL</div>
-                <div class="skill-item">MODELOS RELACIONALES</div>
-                <div class="skill-item">MET. ÁGILES</div>
-                <div class="skill-item">SCRUM</div>
+                <div class="skill-item">SCRUM / AGILE</div>
                 <div class="skill-item">GITHUB</div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>PROYECTOS</h2>
+            <h2 class="lang-text" data-lang="es">PROYECTOS</h2>
+            <h2 class="lang-text" data-lang="en" style="display:none;">PROJECTS</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>PLATAFORMA WEB ISDE</h3>
-                    <div class="project-img"><img src="imagenes/isde.png" alt="Instituto ISDE"></div>
-                    <p>Rediseño integral y optimización de arquitectura de datos para el sitio oficial del Instituto
-                        Superior de Deportes.</p>
+                    <h3 class="lang-text" data-lang="es">PLATAFORMA WEB ISDE</h3>
+                    <h3 class="lang-text" data-lang="en" style="display:none;">ISDE WEB PLATFORM</h3>
+                    <div class="project-img"><img src="imagenes/isde.png" alt="ISDE"></div>
+                    <p class="lang-text" data-lang="es">Rediseño integral y optimización de arquitectura de datos para el sitio oficial del Instituto Superior de Deportes.</p>
+                    <p class="lang-text" data-lang="en" style="display:none;">Full redesign and data architecture optimization for the official ISDE Sports Institute website.</p>
                     <div class="btn-container">
-                        <a class="btn-small" id="btn-detalles">DETALLES</a>
-                        <a href="https://isde.edu.ar/" target="_blank" class="btn-small">VER SITIO</a>
+                        <a class="btn-small" id="btn-detalles">DETALLES / DETAILS</a>
+                        <a href="https://isde.edu.ar/" target="_blank" class="btn-small">VER SITIO / LIVE SITE</a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>COMPRA TECNOLÓGICA</h3>
-                    <div class="project-img"><img src="imagenes/compraTecnologica.png" alt="Compra Tecnologica"></div>
-                    <p>E-commerce Full-Stack desarrollado con React y Supabase. Implementación de inventario dinámico y
-                        pasarela de datos.</p>
+                    <h3 class="lang-text" data-lang="es">COMPRA TECNOLÓGICA</h3>
+                    <h3 class="lang-text" data-lang="en" style="display:none;">TECH E-COMMERCE</h3>
+                    <div class="project-img"><img src="imagenes/compraTecnologica.png" alt="E-commerce"></div>
+                    <p class="lang-text" data-lang="es">E-commerce Full-Stack desarrollado con React y Supabase. Implementación de inventario dinámico.</p>
+                    <p class="lang-text" data-lang="en" style="display:none;">Full-Stack E-commerce built with React and Supabase. Dynamic inventory implementation.</p>
                     <div class="btn-container">
-                        <a href="https://github.com/Lugelio/compraTecnologica" target="_blank" class="btn-small">VER
-                            CODIGO</a>
-                        <a href="https://compra-tecnologica-ahzp.vercel.app/" target="_blank" class="btn-small">VER
-                            SITIO</a>
+                        <a href="https://github.com/Lugelio/compraTecnologica" target="_blank" class="btn-small">CODE</a>
+                        <a href="https://compra-tecnologica-ahzp.vercel.app/" target="_blank" class="btn-small">LIVE SITE</a>
                     </div>
                 </div>
             </div>
-        </section>
         </section>
 
         <section id="credentials">
-            <h2>Formación y Reconocimientos</h2>
+            <h2 class="lang-text" data-lang="es">Formación y Reconocimientos</h2>
+            <h2 class="lang-text" data-lang="en" style="display:none;">Education & Awards</h2>
             <div class="credentials-list">
-
                 <div class="credential-item">
                     <div class="cred-year">2025</div>
                     <div class="cred-info">
-                        <h3>Técnico Superior en Desarrollo de Software</h3>
-                        <p>IFTS N°4 — Plan de estudios completado (Título en trámite)</p>
+                        <h3 class="lang-text" data-lang="es">Técnico Superior en Desarrollo de Software</h3>
+                        <h3 class="lang-text" data-lang="en" style="display:none;">Associate Degree in Software Development</h3>
+                        <p>IFTS N°4</p>
                     </div>
                     <div class="info-button" id="info-button_IFTS">
-                        <button>VER ACTA</button>
+                        <button>VIEW</button>
                     </div>
                 </div>
 
                 <div class="credential-item">
                     <div class="cred-year">2025</div>
                     <div class="cred-info">
-                        <h3>Mención por Desarrollo Institucional</h3>
-                        <p>Ministerio de Educación - Reconocimiento por funcionalidad y diseño web</p>
+                        <h3 class="lang-text" data-lang="es">Mención por Desarrollo Institucional</h3>
+                        <h3 class="lang-text" data-lang="en" style="display:none;">Institutional Recognition Award</h3>
+                        <p>ISDE / Ministerio de Educación</p>
                     </div>
                     <div class="info-button" id="info-button_ISDE">
-                        <button>VER DIPLOMA</button>
-                    </div>
-                </div>
-
-                <div class="credential-item current">
-                    <div class="cred-year">2026</div>
-                    <div class="cred-info">
-                        <h3>Licenciatura en ciencia de datos</h3>
-                        <p>Universidad de Buenos Aires (UBA) — Grado Académico en curso</p>
+                        <button>VIEW</button>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="contact">
-            <h2>Contactame</h2>
+            <h2 class="lang-text" data-lang="es">Contactame</h2>
+            <h2 class="lang-text" data-lang="en" style="display:none;">Contact Me</h2>
             <div class="contact-grid">
-                <div class="contact-item"><span class="label">EMAIL</span>
+                <div class="contact-item">
+                    <span class="label">EMAIL</span>
                     <p>Luishc020502@gmail.com</p>
                 </div>
-                <div class="contact-item"><span class="label">TELÉFONO</span>
+                <div class="contact-item">
+                    <span class="label lang-text" data-lang="es">TELÉFONO</span>
+                    <span class="label lang-text" data-lang="en" style="display:none;">PHONE</span>
                     <p>+54 9 11 22549129</p>
                 </div>
-                <div class="contact-item"><span class="label">UBICACIÓN</span>
+                <div class="contact-item">
+                    <span class="label lang-text" data-lang="es">UBICACIÓN</span>
+                    <span class="label lang-text" data-lang="en" style="display:none;">LOCATION</span>
                     <p>CABA, RECOLETA</p>
                 </div>
             </div>
         </section>
 
         <footer>
-            © 2026 — Luis Hernández, Técnico en desarrollo de software.
+            © 2026 — Luis Hernández.
         </footer>
     </div>
+
+    <div class="modal" id="modal-detalles">
+        <div class="modal-content-wrapper details-modal">
+            <button class="close-button">CLOSE [X]</button>
+            <h3 class="lang-text" data-lang="es">PROYECTO: PLATAFORMA WEB ISDE</h3>
+            <h3 class="lang-text" data-lang="en" style="display:none;">PROJECT: ISDE WEB PLATFORM</h3>
+            <div class="modal-line-divider"></div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <span class="section-tag">01. ROLE</span>
+                    <p class="lang-text" data-lang="es">Formé parte del equipo de desarrollo (6 integrantes) liderando la normalización de datos y el testing crítico.</p>
+                    <p class="lang-text" data-lang="en" style="display:none;">Part of a 6-member dev team, leading data normalization and critical testing phases.</p>
+                </div>
+                <div class="modal-section">
+                    <span class="section-tag">02. STACK</span>
+                    <div class="details-tags">
+                        <span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">QA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal" id="modal-isde">
         <div class="modal-content-wrapper">
-            <button class="close-button">CERRAR [X]</button>
-            <h3>Certificación Oficial ISDE</h3>
-            <div class="modal-line-divider"></div>
-            <div class="image-container">
-                <img src="imagenes/certificado-isde.jpg" alt="Certificado ISDE">
-            </div>
+            <button class="close-button">CLOSE [X]</button>
+            <div class="image-container"><img src="imagenes/certificado-isde.jpg" alt="ISDE"></div>
         </div>
     </div>
 
     <div class="modal" id="modal-ifts">
         <div class="modal-content-wrapper">
-            <button class="close-button">CERRAR [X]</button>
-            <h3>Título en Trámite IFTS</h3>
-            <div class="modal-line-divider"></div>
-            <div class="image-container">
-                <img src="imagenes/certificado-ifts.png" alt="Certificado IFTS">
-            </div>
+            <button class="close-button">CLOSE [X]</button>
+            <div class="image-container"><img src="imagenes/certificado-ifts.png" alt="IFTS"></div>
         </div>
     </div>
-<div class="modal" id="modal-detalles">
-    <div class="modal-content-wrapper details-modal">
-        <button class="close-button">CERRAR [X]</button>
-        <h3>PROYECTO: PLATAFORMA WEB ISDE</h3>
-        <div class="modal-line-divider"></div>
-
-        <div class="modal-body">
-            <div class="modal-section">
-                <span class="section-tag">01. EL ROL</span>
-                <p>Formé parte del equipo de desarrollo (6 integrantes) actuando como nexo técnico en el <strong>levantamiento de requerimientos</strong>. Mi enfoque principal fue traducir las necesidades institucionales en una arquitectura de datos funcional.</p>
-            </div>
-
-            <div class="modal-section">
-                <span class="section-tag">02. DESAFÍO TÉCNICO: NORMALIZACIÓN</span>
-                <p>El mayor reto fue procesar información heredada que no poseía una estructura relacional. Lideré la <strong>normalización de datos</strong>, transformando registros desorganizados en un modelo eficiente que optimizó la velocidad de consulta.</p>
-            </div>
-
-            <div class="modal-section">
-                <span class="section-tag">03. ASEGURAMIENTO DE CALIDAD (QA)</span>
-                <p>Fui responsable de la fase de testing crítico, incluyendo la <strong>validación de funcionalidades con datos reales</strong> (transición de entornos de prueba a producción) y la supervisión técnica del <strong>traspaso de dominio</strong> para garantizar la disponibilidad del sitio sin interrupciones.</p>
-            </div>
-
-            <div class="modal-section">
-                <span class="section-tag">04. STACK TÉCNICO</span>
-                <div class="details-tags">
-                    <span class="tag">WordPress</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">UAT Testing</span>
-                    <span class="tag">Domain Migration</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="btn-container" style="margin-top: 20px;">
-            <a href="https://isde.edu.ar/" target="_blank" class="btn-small">SITIO EN VIVO</a>
-        </div>
-    </div>
-</div>
 
     <script src="javascript.js"></script>
 </body>
-
 </html>
