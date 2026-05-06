@@ -47,6 +47,27 @@ header {
 }
 
 /* Hero Section */
+.btn-cv-hero {
+    display: inline-block;
+    margin-top: 30px; /* Separación con el párrafo anterior */
+    padding: 12px 24px;
+    border: 2px solid var(--accent); /* Borde amarillo para destacar */
+    color: var(--accent); /* Texto amarillo */
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.btn-cv-hero:hover {
+    background: var(--accent); /* Fondo amarillo en hover */
+    color: #000; /* Texto negro en hover */
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4); /* Resplandor */
+    transform: translateY(-3px); /* Pequeño movimiento hacia arriba */
+}
 .hero {
     padding: 120px 0;
 }
